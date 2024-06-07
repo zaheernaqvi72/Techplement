@@ -33,7 +33,7 @@ To use the Weather App, follow these steps:
 
 ## API Key
 
-To use the OpenWeatherMap API, you need to obtain an API key from [OpenWeatherMap](https://openweathermap.org/api) and replace the placeholder `YOUR_API_KEY` in the `script.js` file with your actual API key.
+To use the OpenWeatherMap API, you need to obtain an API key from [OpenWeatherMap](https://openweathermap.org/api) and replace the placeholder `apiKey` in the `script.js` file with your actual API key.
 
 ## Credits
 
