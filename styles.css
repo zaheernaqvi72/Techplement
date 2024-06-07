@@ -1,0 +1,109 @@
+body {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#city-input {
+    width: 90%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+#city-input:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#search-btn {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+#search-btn:hover {
+    background: #0056b3;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.weather-info, .forecast {
+    margin-top: 20px;
+}
+
+.weather-info p, .forecast p {
+    margin: 5px 0;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast .day {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    width: 22%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.forecast .day:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.weather-info {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.weather-info h2 {
+    margin-top: 0;
+}
+.fas {
+    color: #007BFF;
+    margin: 2px;
+}
+.fa-search{
+    color: white;
+}
