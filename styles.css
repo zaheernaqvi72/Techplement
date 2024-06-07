@@ -17,7 +17,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    width: 100%;
+    width: 90%;
     max-width: 600px;
     text-align: center;
 }
@@ -33,7 +33,7 @@ h1, h2 {
 }
 
 #city-input {
-    width: 90%;
+    width: 70%;
     padding: 15px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -47,6 +47,7 @@ h1, h2 {
 }
 
 #search-btn {
+    width: 30%;
     padding: 15px;
     font-size: 16px;
     border: none;
@@ -72,16 +73,16 @@ h1, h2 {
 
 .forecast {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .forecast .day {
-    background: #f1f1f1;
+    width: 48%;
+    margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
-    width: 22%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    margin: 0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -100,10 +101,27 @@ h1, h2 {
 .weather-info h2 {
     margin-top: 0;
 }
+
 .fas {
     color: #007BFF;
     margin: 2px;
 }
-.fa-search{
+
+.fa-search {
     color: white;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 600px) {
+    #city-input {
+        width: 60%;
+    }
+
+    #search-btn {
+        width: 35%;
+    }
+
+    .forecast .day {
+        width: 100%;
+    }
 }
